@@ -1,0 +1,20 @@
+{
+  "IPSet": {
+    "IPSetId": "xxxxxx", 
+    "Name": "hoge-ip", 
+    "IPSetDescriptors": [
+      {
+        "Type": "IPV4",
+        "Value": "192.168.1.0/28"
+      },
+      {
+        "Type": "IPV4",
+        "Value": "192.168.50.0/22"
+      },
+      {
+        "Type": "IPV4",
+        "Value": "192.168.52.0/28"
+      }
+    ]
+  }
+}
