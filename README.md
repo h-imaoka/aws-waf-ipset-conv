@@ -1,5 +1,7 @@
+# aws-waf-ipset-conv
 
 # Dependency
+- python > 2.7
 - aws cli
 
 Via __requirements.txt__
@@ -94,10 +96,11 @@ aws waf update-ip-set --cli-input-json file://converted_hoge-ip.json
 ```
 
 # Features
-- Convert CIDR to Classed subnet. (INSERT & DELETE)
+- Convert CIDR to Classed subnet.
 - Diff current ip-set with local-json-file.
-- /22 -> /24 * 2, /28 -> /32 * 16
-- get-change-token & set it converted-json file
+- Detect INSERT or DELETE.
+- /22 -> /24 * 2, /28 -> /32 * 16.
+- get-change-token & set it converted-json file.
 
 # ToDo
 - IPv6
