@@ -87,7 +87,7 @@ Revoke:
 
 To convert.
 ```
-./conv-cidr-changeset.py -d < hoge-ip.json > conved_hoge-ip.json
+./conv-cidr-changeset.py < hoge-ip.json > conved_hoge-ip.json
 ```
 
 ## 5. Apply
