@@ -55,9 +55,9 @@ def main():
     (del_list, add_list) = _get_diff(curr, newl)
 
     if diff_only:
-        print "Append:"
+        print("Append:")
         pprint.pprint(add_list)
-        print "Revoke:"
+        print("Revoke:")
         pprint.pprint(del_list)
         exit(0)
 
@@ -94,7 +94,7 @@ def main():
                     }
             })
 
-    print json.dumps(ipset_list, indent=4)
+    print(json.dumps(ipset_list, indent=4))
 
 if __name__ == '__main__':
     main()
