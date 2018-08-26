@@ -1,0 +1,15 @@
+version: '3.3'
+
+services:
+  conv-cidr-changeset.py:
+    image: himaoka/aws-waf-ipset-conv
+    environment:
+      - AWS_ACCESS_KEY_ID
+      - AWS_SECRET_ACCESS_KEY
+      - AWS_REGION
+      - AWS_DEFAULT_REGION
+      - AWS_PROFILE
+    volumes:
+      - .:/src
+      - ~/.aws:/root/.aws
+    working_dir: /src
